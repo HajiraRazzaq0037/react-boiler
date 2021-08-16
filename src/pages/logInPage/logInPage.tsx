@@ -10,7 +10,6 @@ export default ({history}: any) => {
     const [user, setUser] = useState<User | any>(null);
     const [error, setError] = useState('');
     const {state}:any = useContext(GlobalContext);
-    console.log("userDetail", state);
     const loginHandler = (e: any) => {
         e.preventDefault();
         if (user === null) {
